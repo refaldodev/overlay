@@ -1,0 +1,293 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color1 {
+    color: #00ff00;
+}
+
+.color2 {
+    color: #ffff00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .wrapper.hide {
+    visibility: hidden;
+} */
+
+.wrapper.gif .text-container {
+    max-width: 750px;
+}
+
+.wrapper.gif {
+    font-size: 16px;
+}
+
+.wrapper.wave .text-container {
+    max-width: 750px;
+}
+
+.wrapper.wave {
+    font-size: 13px;
+}
+
+.wrapper.wave .style-2.text-container .title {
+    margin-bottom: 0;
+}
+
+.wrapper.gif.style2 {
+    font-size: 13px;
+}
+
+.wrapper.text .text-container {
+    max-width: 800px;
+}
+
+.wrapper.text {
+    font-size: 16px;
+}
+
+.wrapper.text.style2 {
+    font-size: 14px;
+}
+
+.wrapper.style1.video {
+    font-size: 13px;
+}
+
+p,
+h4 {
+    color: white;
+    text-align: center;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.wrapper {
+    padding: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
+}
+
+.text-container {
+    font-family: "Open Sans", sans-serif;
+}
+
+.style-1 p,
+.style-1 h4 {
+    /* text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000,
+        0px 0px 4px #000, 0px 0px 5px #000; */
+    text-shadow: 0px 0px 0.034em #000, 0px 0px 0.069em #000, 0px 0px 0.103em #000,
+        0px 0px 0.138em #000, 0px 0px 0.172em #000;
+    line-height: 1.4;
+}
+
+.style-2 p {
+    line-height: 1.4;
+}
+
+.style-2.text-container {
+    border-radius: 10px;
+    padding: 0;
+    line-height: 1.4;
+    overflow: hidden;
+    margin: auto;
+    padding: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1.8em;
+    background-color: #00a500;
+}
+
+.wrapper.style2.video {
+    font-size: 10px;
+}
+
+.wrapper.wave.style2 .text-container {
+    padding-bottom: 1.2em;
+}
+
+.style-2.text-container .title {
+    font-weight: 800;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+}
+
+.style-2.text-container .footer {
+    font-size: 2.5em;
+    padding: 0.9em 0.5em;
+    font-weight: 800;
+}
+
+.style-2.text-container .message {
+    font-weight: 800;
+    font-size: 1.875em;
+    padding-top: 0;
+}
+
+.style-1.text-container {
+    border-radius: 10px;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style-1.text-container .title {
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.style-1.text-container .message {
+    font-weight: 800;
+    font-size: 1.6em;
+}
+
+.media-container {
+    width: 100%;
+    height: 100%;
+}
+
+.media-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.wrapper > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+html {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.wiggle {
+    display: inline-block;
+    animation: wiggle 0.5s infinite;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.font-check {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.wave {
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave img {
+    max-height: 100%;
+    width: auto;
+}
+
+.media-container {
+    height: 100%;
+    flex-direction: column;
+}
+
+.media {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    line-height: 1.4 !important;
+}
+
+.message {
+    line-height: 1.4 !important;
+}
+
+.progress-bar-container {
+    width: 100%;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #ff0000;
+    transition: width 100ms linear;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgrey;
+    z-index: -1;
+}
+
+.media {
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.progress-bar-container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
